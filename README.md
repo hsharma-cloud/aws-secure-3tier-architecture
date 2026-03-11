@@ -1,17 +1,54 @@
 # AWS Secure 3-Tier Architecture
 
-This project demonstrates a secure and scalable cloud architecture built on AWS.
+This project demonstrates a secure and scalable 3-tier cloud architecture built on AWS.  
+The goal is to simulate a real-world production architecture using core AWS services.
 
-Components include:
+---
 
-- VPC with public and private subnets
+## Architecture Overview
+
+User → CloudFront → Application Load Balancer → EC2 Auto Scaling → RDS Database
+
+---
+
+## Services Used
+
+- Amazon VPC
 - Application Load Balancer
-- EC2 Auto Scaling Group
-- RDS database
-- CloudFront CDN
-- S3 storage
-- CloudWatch monitoring
+- Amazon EC2
+- EC2 Auto Scaling
+- Amazon RDS
+- Amazon S3
+- Amazon CloudFront
+- IAM
+- Amazon CloudWatch
 
-Architecture Flow:
+---
 
-User → CloudFront → Load Balancer → EC2 → RDS
+## Project Structure
+
+aws-secure-3tier-architecture  
+│  
+├── terraform  
+├── architecture-diagram  
+├── deployment-steps  
+├── screenshots  
+└── README.md  
+
+---
+
+## Goals
+
+- Build a secure AWS network architecture
+- Practice high availability design
+- Implement scalable web infrastructure
+- Document architecture decisions
+
+---
+
+## Future Improvements
+
+- Infrastructure deployment using Terraform
+- Add architecture diagrams
+- Include deployment screenshots
+- Implement monitoring and alerting
