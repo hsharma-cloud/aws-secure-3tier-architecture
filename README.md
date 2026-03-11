@@ -88,4 +88,4 @@ CloudWatch Monitoring
 
 ## Author
 
-Cloud Architecture Lab by Hari Sharma
+Cloud Architecture by Hari Sharma
