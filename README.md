@@ -86,13 +86,7 @@ S3 Storage
 CloudWatch Monitoring
 ```
 
-
 ## Architecture Screenshots
-
-Full infrastructure screenshots are available here:
-
-[screenshots/architecture-screenshots.md](screenshots/architecture-screenshots.md)
-
 This includes screenshots of:
 
 - CloudFront Distribution
@@ -103,22 +97,6 @@ This includes screenshots of:
 - RDS Database
 - S3 Storage
 - CloudWatch Dashboard
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## Architecture Screenshots
 
 ### CloudFront Distribution
 ![CloudFront](screenshots/cloudfront-distribution.png)
