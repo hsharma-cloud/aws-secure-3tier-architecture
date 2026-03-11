@@ -87,13 +87,6 @@ CloudWatch Monitoring
 ```
 
 
-
-
-
-
-
-
-
 ## Architecture Screenshots
 
 Full infrastructure screenshots are available here:
@@ -110,6 +103,46 @@ This includes screenshots of:
 - RDS Database
 - S3 Storage
 - CloudWatch Dashboard
-## Author
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Architecture Screenshots
+
+### CloudFront Distribution
+![CloudFront](screenshots/cloudfront-distribution.png)
+
+### Application Load Balancer
+![Application Load Balancer](screenshots/application-load-balancer.png)
+
+### Target Group Health
+![Target Group](screenshots/target-group-health.png)
+
+### Auto Scaling Group
+![Auto Scaling](screenshots/autoscaling-group.png)
+
+### EC2 Instances
+![EC2 Instances](screenshots/ec2-instances.png)
+
+### RDS Database
+![RDS Database](screenshots/rds-database.png)
+
+### S3 Storage
+![S3 Storage](screenshots/s3-storage.png)
+
+### CloudWatch Monitoring
+![CloudWatch Dashboard](screenshots/cloudwatch-dashboard.png)
+
+## Author
 Cloud Architecture by Hari Sharma
