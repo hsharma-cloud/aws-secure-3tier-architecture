@@ -86,6 +86,30 @@ S3 Storage
 CloudWatch Monitoring
 ```
 
+
+
+
+
+
+
+
+
+## Architecture Screenshots
+
+Full infrastructure screenshots are available here:
+
+[screenshots/architecture-screenshots.md](screenshots/architecture-screenshots.md)
+
+This includes screenshots of:
+
+- CloudFront Distribution
+- Application Load Balancer
+- Target Group Health
+- Auto Scaling Group
+- EC2 Instances
+- RDS Database
+- S3 Storage
+- CloudWatch Dashboard
 ## Author
 
 Cloud Architecture by Hari Sharma
