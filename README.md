@@ -11,6 +11,67 @@ The application follows a traditional **3-tier architecture**.
 
 User → CloudFront → Application Load Balancer → EC2 Auto Scaling → RDS Database
 
+
+
+
+
+
+## Architecture Components
+
+This architecture is deployed inside a custom AWS Virtual Private Cloud (VPC) designed to separate public-facing resources from internal application and database layers.
+
+### VPC
+
+VPC CIDR Block  
+10.0.0.0/16
+
+The VPC provides network isolation for the application infrastructure.
+
+### Public Subnets
+
+Public subnets host resources that must be accessible from the internet.
+
+Components deployed in public subnets:
+
+- Application Load Balancer
+- NAT Gateway
+- Internet Gateway attachment
+
+Example CIDR ranges:
+
+10.0.1.0/24  
+10.0.2.0/24
+
+### Private Subnets
+
+Private subnets host internal application and database resources that should not be directly accessible from the internet.
+
+Components deployed in private subnets:
+
+- EC2 application servers
+- Amazon RDS database
+
+Example CIDR ranges:
+
+10.0.11.0/24  
+10.0.12.0/24
+
+### Security Controls
+
+Security is enforced using multiple AWS mechanisms:
+
+- Security Groups for instance-level firewall rules
+- Network isolation using private subnets
+- IAM roles for controlled service permissions
+
+### Monitoring
+
+Monitoring and operational visibility are provided using:
+
+- Amazon CloudWatch metrics
+- CloudWatch alarms
+- Log monitoring
+
 ### Architecture Layers
 
 **Edge Layer**
